@@ -1,0 +1,18 @@
+h1 {
+    color: orangered;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    
+}
+h3 {
+    color: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+hr {
+    border-color: orangered;
+    border-width: 3px;
+    
+}
