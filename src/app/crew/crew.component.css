@@ -17,10 +17,18 @@ img {
 
 h3 {
     text-align: center;
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 /* Add a 'selected' class here to style selected astronaut names a different color. */
 
 .selected {
     color: blue;
+}
+
+li {
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

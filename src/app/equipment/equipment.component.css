@@ -1,24 +1,42 @@
 .displayBox {
-    height: 275px;
-    width: auto;
+  height: 275px;
+  width: auto;
 }
 
 button {
-    margin: 2px;
-    cursor: pointer;
+  margin: 2px;
+  cursor: pointer;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
+  text-align: center;
+  color: brown;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Add an 'active' class to style the background of the 'Add to Cargo Hold' buttons. */
 .active {
-    background-color: gold;
+  background-color: gold;
 }
 
 /* Add the 'nearMaxMass' class style here: */
 .nearMaxMass {
-    color: red;
-    font-style: italic;
+  color: red;
+  font-style: italic;
+}
+
+li {
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.displayBox, li {
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.displayBox, button {
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

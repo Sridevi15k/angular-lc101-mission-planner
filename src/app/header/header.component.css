@@ -5,9 +5,18 @@
 h2 {
     text-align: center;
     color: brown;
+    background-color: antiquewhite;
+    margin: 0 0 0 0;
+    padding: 10px 0 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
     text-align: center;
     text-decoration: underline;
+    background-color: blanchedalmond;
+    margin: 0 0 0 0;
+    color: brown;
+    padding: 10px 0 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

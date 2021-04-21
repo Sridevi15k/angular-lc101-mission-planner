@@ -2,4 +2,6 @@
     display: flex;
     padding: 10px;
     justify-content: space-evenly;
+    background-color: aquamarine;
+    height: 800px;
 }
