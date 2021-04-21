@@ -6,6 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./equipment.component.css"],
 })
 export class EquipmentComponent implements OnInit {
+  inCargo: boolean = false;
+
   equipmentItems: object[] = [
     { name: "Duct Tape", mass: 0.5 },
     { name: "Space Camera", mass: 20 },
@@ -26,12 +28,31 @@ export class EquipmentComponent implements OnInit {
 
   ngOnInit() {}
 
-  // Code your addItem function here:
-  addItem(item: object) : boolean {
-    this.cargoHold.push(item);
-    this.cargoMass += item['mass'];
-    return this.maximumAllowedMass - this.cargoMass <= 200;
-    }
+  checkCount(item: object): number {
+    let count = 0;
+    this.cargoHold.forEach((element) => {
+      if (item["name"] === element["name"]) {
+        count++;
+      }
+    });
+    return count;
+  }
 
+  // Code your addItem function here:
+  addItem(item: object) {
+    if (this.cargoHold.includes(item)) {
+      this.inCargo = true;
+  } else {
+      this.inCargo = false;
+  }
+    if (this.checkCount(item) < 2) {
+      this.cargoHold.push(item);
+      this.cargoMass += item["mass"];
+      return this.maximumAllowedMass - this.cargoMass <= 200;
+    } else if (this.inCargo) {
+      let index = this.cargoHold.indexOf(item);
+      this.cargoHold.splice(index, 2);
+    }
+  }
 }
 

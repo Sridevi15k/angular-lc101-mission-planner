@@ -15,3 +15,11 @@
     <!-- Add an img tag here to display astronaut photos. -->
     <img *ngIf="selected" [src]="selected.photo"/>
 </div>
+<hr>
+<div class="displayBox">
+    <h3>Skills<h3>
+        <ul class="skill">
+            <li *ngFor="let job of candidates">{{job.skill}}</li>
+        </ul>
+</h3>
+

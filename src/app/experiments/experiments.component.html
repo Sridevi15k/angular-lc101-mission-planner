@@ -1,7 +1,15 @@
 <div class="displayBox">
     <h3>Possible Experiments</h3>
     <ul>
-      <li *ngFor="let experiment of experiments">{{experiment}}</li>
+      <li [class.selected]="votedFor.includes(project)"*ngFor="let project of experiments" (click)="addExperiment(project)" >{{project}}</li>
     </ul>
 </div>
 <hr>
+<div class="displayBox">
+    <h3> Experiments Voted For <span *ngIf="votedFor.length === 3">Full</span>
+         <!-- Add a span tag here to display 'Full' when the crew reaches 3. --></h3>
+    <ol>
+        <li *ngFor="let project of votedFor" (mouseover)="selected = project" (mouseout)="selected = false">{{project}}</li>
+    </ol>
+    
+</div>

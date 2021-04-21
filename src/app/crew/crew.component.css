@@ -3,7 +3,7 @@ li:hover {
 }
 
 .displayBox {
-    height: 275px;
+    height: 250px;
     width: auto;
 }
 
@@ -31,4 +31,8 @@ h3 {
 li {
     color: brown;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-style: inherit;
+    font-weight: 100;
+    text-align: left;
 }
